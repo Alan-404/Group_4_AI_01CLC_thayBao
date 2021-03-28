@@ -56,12 +56,13 @@ void DLS(int start, int goal, int dept_limit)
 				Dept[v] = Dept[current] + 1;
 				if (Dept[v] <= dept_limit)
 				{
-					st.push(v);
+					st.push(current);
 				}
 				else
 				{
 					v = n;
 					st.pop();
+					break;
 				}
 				if (v == goal)
 				{
