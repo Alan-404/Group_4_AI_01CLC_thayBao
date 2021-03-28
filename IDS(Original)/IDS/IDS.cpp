@@ -92,6 +92,7 @@ bool DLS(int start, int goal, int dept_limit)
 
 void IDS(int start, int goal)
 {
+	++n;
 	bool flag;
 	for (int i = 1; ; ++i)
 	{
