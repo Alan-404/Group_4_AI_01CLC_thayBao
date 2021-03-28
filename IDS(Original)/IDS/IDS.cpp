@@ -52,9 +52,6 @@ bool DLS(int start, int goal, int dept_limit)
 		{
 			if (!check[v] && adj[i][v] == 1)
 			{
-				check[v] = true;
-				path[v] = current;
-				Dept[v] = Dept[current] + 1;
 				if (Dept[v] <= dept_limit)
 				{
 					st.push(v);
@@ -65,6 +62,9 @@ bool DLS(int start, int goal, int dept_limit)
 					st.pop();
 					break;
 				}
+				check[v] = true;
+				path[v] = current;
+				Dept[v] = Dept[current] + 1;
 				if (v == goal)
 				{
 					printPath(path, start, goal);
