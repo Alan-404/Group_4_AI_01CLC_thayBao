@@ -60,7 +60,7 @@ bool DLS(int start, int goal, int dept_limit)
 					st.push(v);
 				}
 				else
-					continue;
+					break;
 				if (v == goal)
 				{
 					printPath(path, start, goal);
