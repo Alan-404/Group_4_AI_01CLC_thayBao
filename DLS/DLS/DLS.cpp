@@ -59,7 +59,10 @@ void DLS(int start, int goal, int dept_limit)
 					st.push(v);
 				}
 				else
-					break;
+				{
+					v = n;
+					st.pop();
+				}
 				if (v == goal)
 				{
 					printPath(path, start, goal);
