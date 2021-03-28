@@ -24,7 +24,7 @@ void printPath(int* path, int start, int goal)
 		pos = path[pos];
 	}
 	cout << result[result.size() - 1];
-	for (int i = result.size() - 1; i >= 0; --i)
+	for (int i = result.size() - 2; i >= 0; --i)
 	{
 		cout << " --> " << result[i];
 	}
