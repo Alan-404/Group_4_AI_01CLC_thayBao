@@ -58,7 +58,6 @@ void DLS(int start, int goal, int dept_limit)
 				else
 				{
 					v = n;
-					st.pop();
 					break;
 				}
 				check[v] = true;
